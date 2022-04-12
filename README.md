@@ -15,6 +15,7 @@ Run `npm run dev` to start the **Express.js** server.
 ## Database
 The database, `shortened_urls_db`, for this particular challenge is stored in MongoDB following a NoSQL DB model.
 It constains a collection, `shortened_url`, with the following schema:
+
 -`_id:` an ID atrributed autommatically by MongoDB;
 -`urlCode:` a String that contains the code that represents the shortened version of the given link;
 -`longUrl:` the given link to be shorten;
