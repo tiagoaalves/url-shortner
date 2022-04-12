@@ -15,18 +15,15 @@ Run `npm run dev` to start the **Express.js** server.
 ## Database
 The database, `shortened_urls_db`, for this particular challenge is stored in MongoDB following a NoSQL DB model.
 It constains a collection, `shortened_url`, with the following schema:
+- `_id:` an ID atrributed autommatically by MongoDB;
 
--`_id:` an ID atrributed autommatically by MongoDB;
+- `urlCode:` a String that contains the code that represents the shortened version of the given link;
 
--`urlCode:` a String that contains the code that represents the shortened version of the given link;
+- `longUrl:` the given link to be shorten;
 
--`longUrl:` the given link to be shorten;
-
--`shortUrl:` the full representation of the shortened link;
-
--`timesShortened:` a Number representing the ammount of times this particular `longUrl` was shortened;
-
--`timesAcessed:` a Number representing the ammount of times this particular `shortUrl` was acessed;
+- `shortUrl:` the full representation of the shortened link;
+- `timesShortened:` a Number representing the ammount of times this particular `longUrl` was shortened;
+- `timesAcessed:` a Number representing the ammount of times this particular `shortUrl` was acessed;
 
 This schema is built in the file `/models/Url.js`.
 
