@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://USERNAME:PASSWORD@cluster0.aktty.mongodb.net/shortened_urls_db?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
+}
